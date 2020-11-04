@@ -1,0 +1,125 @@
+body {
+    font-family: Microsoft JhengHei;
+    font-weight: 600;
+    color: #008080;
+}
+
+h1 {
+    height: 70px;
+    line-height: 70px;
+    font-size: 2rem;
+    border-bottom: 5px solid;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #D2EAE7;
+    border: 5px solid;
+}
+
+.sideBar {
+    float: left;
+    width: 30%;
+    height: 500px;
+}
+
+.content {
+    float: left;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #E2F2EE;
+    border-radius: 10px;
+    width: 65%;
+    height: 500px;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.todoList {
+    overflow: auto;
+    height: 435px;
+}
+
+li {
+    margin: 30px 0;
+    display: block;
+}
+
+li a {
+    padding: 5%;
+    display: block;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: #008080;
+    text-decoration: none;
+}
+
+.actived-tab {
+    margin: 0 10px;
+    background-color: #E2F2EF;
+
+}
+
+i {
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+input {
+    height: 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+input[type='checkbox']:checked+i {
+    color: #008080;
+}
+
+input[type='checkbox']:checked~label {
+    text-decoration: line-through;
+}
+
+.list-item {
+    position: relative;
+    padding-bottom: 10px;
+    line-height: 50px;
+    border-bottom: 2px solid;
+}
+
+.textBox {
+    width: 80%;
+}
+
+.editInput {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 80%;
+}
+
+.list-item>div {
+    display: inline-block;
+}
+
+.icon {
+    float: right;
+}
